@@ -2,31 +2,23 @@
 
 ### Overview
 
-This project demonstrates the anonymisation of a customer dataset containing personally identifiable information (PII) and sensitive financial data. The objective was to preserve the dataset's usefulness for analysis while protecting customer privacy using standard data anonymisation techniques.
+This project demonstrates the anonymisation of a mobile customer dataset by applying data privacy techniques to protect personally identifiable information (PII) while preserving the dataset's analytical value. The anonymised dataset is suitable for data analysis without exposing sensitive customer information.
 
-### Dataset
+### Objective
 
-The original dataset contained customer information such as:
+The objective of this project was to:
 
-* Customer ID
-* Username
-* Name
-* Email Address
-* Residence
-* Current Location
-* Birthdate
-* Age
-* Salary
-* Employer
-* Credit Card Information
+* Protect customer privacy by removing or transforming sensitive information.
+* Preserve valuable data for analysis.
+* Demonstrate practical data anonymisation techniques commonly used in data science and data governance.
 
-###Anonymisation Techniques Used
+### Anonymisation Techniques
 
-#### 1. Pseudonymisation
+#### Pseudonymisation
 
-* Replaced the original `customer_id` with anonymous identifiers (`U0001`, `U0002`, ...).
+* Replaced the original customer identifier with anonymous IDs (`U0001`, `U0002`, ...).
 
-#### 2. Generalisation
+#### Generalisation
 
 * Converted **Age** into **Age Groups**:
 
@@ -43,26 +35,27 @@ The original dataset contained customer information such as:
   * `100k–149k`
   * `150k+`
 
-#### 3. Removal of Sensitive Information
+#### Removal of Sensitive Data
 
-The following fields were removed to protect customer privacy:
+The following information was removed to protect customer privacy:
 
-* Original Customer ID
 * Username
 * Name
 * Email Address
-* Residence
-* Current Location (GPS Coordinates)
 * Birthdate
+* Residence
 * Employer
+* GPS Location
 * Credit Card Provider
 * Credit Card Number
 * Credit Card Security Code (CVV)
 * Credit Card Expiry Date
+* Original Age
+* Original Salary
 
 ### Final Dataset
 
-The anonymised dataset contains only the following fields:
+The anonymised dataset contains the following fields:
 
 * anonymous_customer_id
 * date_registered
@@ -75,17 +68,17 @@ The anonymised dataset contains only the following fields:
 
 * Microsoft Excel
 
-### Learning Outcomes
+### Skills Demonstrated
 
-This project demonstrates practical application of data privacy principles, including:
-
-* Data anonymisation
+* Data Cleaning
+* Data Anonymisation
+* Data Privacy
+* Data Generalisation
 * Pseudonymisation
-* Data generalisation
-* Data minimisation
-* Protection of Personally Identifiable Information (PII)
-* Preserving analytical value while safeguarding sensitive information
+* Data Minimisation
+* Microsoft Excel
+* Data Preparation
 
-### Project Outcome
+### Outcome
 
-The resulting dataset is suitable for data analysis while significantly reducing the risk of identifying individual customers. The anonymisation process follows best practices for handling sensitive data and demonstrates techniques commonly used in data science and data governance.
+The resulting dataset maintains its analytical usefulness while reducing the risk of identifying individual customers. This project demonstrates practical data privacy techniques that are widely used in data analytics, business intelligence, and data science workflows.
